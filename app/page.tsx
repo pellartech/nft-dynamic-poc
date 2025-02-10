@@ -3,7 +3,6 @@
 
 import { DynamicWidget } from "@/lib/dynamic";
 import { useState, useEffect } from 'react';
-import DynamicMethods from "@/app/components/Methods";
 import './page.css';
 import MyAssets from "./components/MyAssets/MyAssets";
 

@@ -61,15 +61,6 @@ export default function DynamicMethods({ isDarkMode }) {
         setResult(safeStringify(walletClient));
     }
 
-    async function signEthereumMessage() {
-        if(!primaryWallet || !isEthereumWallet(primaryWallet)) return;
-
-        const signature = await primaryWallet.signMessage("Hello World");
-        setResult(signature);
-    }
-
-
-
    return (
     <>
       {!isLoading && (
@@ -83,7 +74,6 @@ export default function DynamicMethods({ isDarkMode }) {
       <>
         <button className="btn btn-primary" onClick={fetchPublicClient}>Fetch Public Client</button>
         <button className="btn btn-primary" onClick={fetchWalletClient}>Fetch Wallet Client</button>
-        <button className="btn btn-primary" onClick={signEthereumMessage}>Sign "Hello World" on Ethereum</button>    
       </>
     }
 
