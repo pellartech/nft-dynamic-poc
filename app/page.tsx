@@ -1,10 +1,10 @@
 
 'use client';
 
-import { DynamicWidget } from "@/lib/dynamic";
 import { useState, useEffect } from 'react';
 import './page.css';
 import MyAssets from "./components/MyAssets/MyAssets";
+import { DynamicWidget } from '@dynamic-labs/sdk-react-core';
 
 const checkIsDarkSchemePreferred = () => {
   if (typeof window !== 'undefined') {
